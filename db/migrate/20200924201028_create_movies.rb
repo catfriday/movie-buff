@@ -8,6 +8,8 @@ class CreateMovies < ActiveRecord::Migration[6.0]
       t.string :image
       t.string :video_link
       t.text :movie_info
+      t.integer :likes
+      t.integer :dislikes
       t.timestamps
     end
   end
