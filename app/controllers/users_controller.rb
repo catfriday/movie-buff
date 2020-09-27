@@ -21,7 +21,7 @@ class UsersController < ApplicationController
         user = User.new(user_params)
 
         if user.save
-        render json: user, only: [:username, :password], status: :created
+        render json: user, only: [:username, :password, :id], status: :created
         else 
             render json: { error: 'failed to create user' }, status: :not_acceptable
         end
