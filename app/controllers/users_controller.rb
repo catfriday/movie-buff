@@ -13,8 +13,7 @@ class UsersController < ApplicationController
     end
 
     def show
-        render json: @user, only: [:username, :password]
-        # , methods: [posted_movies]
+        render json: @user, only: [:username, :password], methods: [:posted_movies]
     end
 
     def create
