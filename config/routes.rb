@@ -5,5 +5,6 @@ Rails.application.routes.draw do
 
   get '/users/login/:username', to: 'users#login'
   get '/users/watchlist/:username', to: 'users#watchlist'
+  post '/watchlist/delete', to: 'watchlists#destroy'
   
 end

@@ -15,7 +15,7 @@ class MoviesController < ApplicationController
         render json: @movie, except: [:created_at, :updated_at]
     end
 
-    def created
+    def create
         movie = Movie.new(movie_params)
         if movie.save
             render json: movie, except: [:created_at, :updated_at]
@@ -37,7 +37,7 @@ class MoviesController < ApplicationController
     end
 
     def movie_params
-        params.require(:movie).permit(:title, :genre, :review, :image, :video_link, :movie_info, :likes, :dislikes)
+        params.require(:movie).permit(:user_id, :title, :genre, :review, :image, :video_link, :movie_info, :likes, :dislikes)
     end
     
     

@@ -17,8 +17,9 @@ class WatchlistsController < ApplicationController
     end
 
    def destroy
-    watchlist = Watchlist.find_by(params[:id])
-    watchlist.destroy
+    # byebug
+     Watchlist.where(user_id: params[:user][:id], movie_id: params[:movie][:id]).destroy_all
+    # watchlist.destroy
     render json: "Watchlist Has been Destroyed"
    end
    
