@@ -21,4 +21,5 @@ class WatchlistsController < ApplicationController
     watchlist.destroy
     render json: "Watchlist Has been Destroyed"
    end
+   
 end

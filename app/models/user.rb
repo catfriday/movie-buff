@@ -10,5 +10,11 @@ class User < ApplicationRecord
         Movie.where(user_id: self.id)        
     end
 
+    def watchlist
+        self.movies.select do |movie|
+            movie.user_id != self.id
+        end
+    end
+
 end
 

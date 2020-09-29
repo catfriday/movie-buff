@@ -9,11 +9,12 @@ class UsersController < ApplicationController
     
     def login
         user = User.find_by(username: params[:username])
-        render json: user, only: [:id, :username]
+        render json: user, only: [:id, :username], include:[:movies], methods: [:posted_movies, :watchlist]
     end
 
     def show
-        render json: @user, only: [:username, :password], methods: [:posted_movies]
+     
+        render json: @user, only: [:username, :password], include:[:movies], methods: [:posted_movies, :watchlist]
     end
 
     def create
