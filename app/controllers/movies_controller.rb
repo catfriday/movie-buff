@@ -1,5 +1,5 @@
 class MoviesController < ApplicationController
-    before_action :find_user, only: [:show, :update, :destroy]
+    before_action :find_user, only: [:show, :destroy]
 
     def index
         movies = Movie.all
@@ -11,8 +11,9 @@ class MoviesController < ApplicationController
     end
 
     def update
-        
-        render json: @movie, except: [:created_at, :updated_at]
+        movie = Movie.find_by(id: params[:id])
+        movie.update(movie_params)
+        render json: movie, except: [:created_at, :updated_at]
     end
 
     def create
