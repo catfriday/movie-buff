@@ -12,6 +12,9 @@ Watchlist.destroy_all
 
 cat = User.create(username: "Cat", password: "password")
 sanam = User.create(username: "Sanam", password: "password")
+beyonce = User.create(username: "Beyonce", password: "password")
+jim = User.create(username: "Jim", password: "password")
+bob = User.create(username: "Bob", password: "password")
 
 
 movie1 = Movie.create(
@@ -147,6 +150,105 @@ movie4 = Movie.create(
         and soon sets about clawing and pushing her way to become the top of the Vegas showgirls."
     )
 
+    movie11 = Movie.create(
+        user_id: beyonce.id,
+        title: "Cruel Intentions",
+        genre: "Melodrama",
+        review: "I'm glad I didn't turn this off 20 minutes in, thinking that it was basically what I'd heard and expected. Despite all the early embarrassing missteps and clunky lines delivered by Ms Berkeley, the film actually grew into an experience that 
+        I didn't want to turn off. It's ten times as good as Striptease.",
+        likes: 0,
+        dislikes: 0,
+        image: "https://m.media-amazon.com/images/M/MV5BMjMxNjM5OTQ2M15BMl5BanBnXkFtZTgwNjUxNzYxMTE@._V1_UX182_CR0,0,182,268_AL_.jpg",
+        video_link: "https://www.youtube.com/embed/SCFR2vpMIQU",
+        movie_info: "Two vicious step-siblings of an elite Manhattan prep school make a wager: to deflower the new headmaster's daughter before the start of term."
+    )
+
+    movie12 = Movie.create(
+        user_id: beyonce.id,
+        title: "Girl, Interrupted",
+        genre: "Drama",
+        review: "I came to the film with low expectations. I was simply stunned by how good it was.",
+        likes: 0,
+        dislikes: 0,
+        image: "https://images-na.ssl-images-amazon.com/images/I/51Gn6QnZF3L._AC_.jpg",
+        video_link: "https://www.youtube.com/embed/e6XdqEuH3FU",
+        movie_info: "Based on writer Susanna Kaysen's account of her 18-month stay at a mental hospital in the late 1960s.
+        "
+    )
+
+    movie13 = Movie.create(
+        user_id: jim.id,
+        title: "Ever After: A Cinderella Story",
+        genre: "Romance",
+        review: "...A filmmaker decided to do another rendition of Cinderella; and what a beautiful rendition it is!",
+        likes: 0,
+        dislikes: 0,
+        image: "https://c8.alamy.com/comp/EJ25EY/ever-after-a-cinderella-story-year-1998-usa-director-andy-tennant-EJ25EY.jpg",
+        video_link: "https://youtu.be/L3eMhbH_-nM",
+        movie_info: "The Brothers Grimm arrive at the home of a wealthy Grande Dame who speaks of the many legends surrounding the fable of the cinder girl before telling the true story of her ancestor."
+    )
+
+    movie14 = Movie.create(
+        user_id: bob.id,
+        title: "Boyz n the Hood",
+        genre: "Drama",
+        review: "A gripping tale about South Central L.A.",
+        likes: 0,
+        dislikes: 0,
+        image: "https://m.media-amazon.com/images/M/MV5BZmRjNDI5NTgtOTIwMC00MzJhLWI4ZTYtMmU0ZTE3ZmRkZDNhXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg",
+        video_link: "https://youtu.be/J4sKiGkzKJo",
+        movie_info:"Follows the lives of three young males living in the Crenshaw ghetto of Los Angeles, dissecting questions of race, relationships, violence, and future prospects."
+    )
+
+    movie15 = Movie.create(
+        user_id: bob.id,
+        title: "Edward Scissorhands",
+        genre: "Fantasy",
+        review: "A poignant miracle",
+        likes: 0,
+        dislikes: 0,
+        image:"https://images-na.ssl-images-amazon.com/images/I/717VHO0PfIL._AC_SY679_.jpg",
+        video_link: "https://youtu.be/TBHIO60whNw",
+        movie_info: "An artificial man, who was incompletely constructed and has scissors for hands, leads a solitary life. Then one day, a suburban lady meets him and introduces him to her world."
+    )
+
+    movie16 = Movie.create(
+        user_id: beyonce.id,
+        title: "What's Eating Gilbert Grape",
+        genre: "Drama",
+        review: "A film that will never age and you will always have a place for in your heart",
+        likes: 0,
+        dislikes: 0,
+        image: "https://images-na.ssl-images-amazon.com/images/I/91kEHVj3kIL._SL1500_.jpg",
+        video_link: "https://youtu.be/X6sLIP3908w",
+        movie_info:"A young man in a small Midwestern town struggles to care for his mentally-disabled younger brother and morbidly obese mother while attempting to pursue his own happiness."
+    )
+
+    movie17 = Movie.create(
+        user_id: bob.id,
+        title: "She's All That",
+        genre: "Romance",
+        review: "When I saw this film a couple of years ago, I was sixteen, I sort of loved it. Seeing it again, not in my teenage years anymore, I realize that 'She's All That' really is for teenagers. I still like it.",
+        likes: 0,
+        dislikes: 0,
+        image:"https://pics.filmaffinity.com/She_s_All_That-992579673-large.jpg",
+        video_link: "https://youtu.be/ExDPiPhLqEQ",
+        movie_info: "A high school jock makes a bet that he can turn an unattractive girl into the school's prom queen."
+    )
+
+    movie18 = Movie.create(
+        user_id: jim.id,
+        title: "Blair Witch Project",
+        genre: "Horror",
+        review: " It FORCES YOU TO BECOME INVOLVED IN THE MOVIE GOING EXPERIENCE!",
+        likes: 0,
+        dislikes: 0,
+        image: "https://images-na.ssl-images-amazon.com/images/I/41-QPDmz9qL._AC_SY445_.jpg",
+        video_link: "https://youtu.be/a_Hw4bAUj8A",
+        movie_info: "Three film students vanish after traveling into a Maryland forest to film a documentary on the local Blair Witch legend, leaving only their footage behind."
+    )
+    
+
   
 
 
@@ -162,6 +264,14 @@ watchlist_7 = Watchlist.create(user_id: cat.id, movie_id: movie8.id)
 watchlist_8 = Watchlist.create(user_id: sanam.id, movie_id: movie7.id)
 watchlist_9 = Watchlist.create(user_id: cat.id, movie_id: movie10.id)
 watchlist_10 = Watchlist.create(user_id: sanam.id, movie_id: movie9.id)
+watchlist_11 = Watchlist.create(user_id: beyonce.id, movie_id: movie5.id)
+watchlist_12 = Watchlist.create(user_id: jim.id, movie_id: movie16.id)
+watchlist_13 = Watchlist.create(user_id: bob.id, movie_id: movie13.id)
+watchlist_14 = Watchlist.create(user_id: beyonce.id, movie_id: movie15.id)
+watchlist_15 = Watchlist.create(user_id: jim.id, movie_id: movie16.id)
+watchlist_16 = Watchlist.create(user_id: bob.id, movie_id: movie12.id)
+watchlist_17 = Watchlist.create(user_id: jim.id, movie_id: movie11.id)
+watchlist_18 = Watchlist.create(user_id: beyonce.id, movie_id: movie18.id)
 
 
 puts "You did it kid!"
