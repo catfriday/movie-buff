@@ -247,6 +247,90 @@ movie4 = Movie.create(
         video_link: "https://youtu.be/a_Hw4bAUj8A",
         movie_info: "Three film students vanish after traveling into a Maryland forest to film a documentary on the local Blair Witch legend, leaving only their footage behind."
     )
+
+    movie19 = Movie.create(
+        user_id: beyonce.id,
+        title: "Interview with the Vampire",
+        genre: "Horror",
+        review: "With a combination of Anne Rice's script and Neil Jordan's direction, the overlooked Interview with the Vampire not only looks great but contains good material.",
+        likes: 0,
+        dislikes: 0,
+        image: "https://images-na.ssl-images-amazon.com/images/I/51cf4333X4L._AC_UL600_SR405,600_.jpg",
+        video_link: "https://youtu.be/kh0nvzR2GaM",
+        movie_info: "A vampire tells his epic life story: love, betrayal, loneliness, and hunger."
+    )
+
+    movie20 = Movie.create(
+        user_id: jim.id,
+        title:"Good Will Hunting",
+        genre: "Drama",
+        review:"This is the best movie I have seen since the Godfather.",
+        likes: 0,
+        dislikes: 0,
+        image: "https://images-na.ssl-images-amazon.com/images/I/511WJQFRDZL._AC_SY445_.jpg",
+        video_link: "https://youtu.be/PaZVjZEFkRs",
+        movie_info: "Will Hunting, a janitor at M.I.T., has a gift for mathematics, but needs help from a psychologist to find direction in his life."
+    )
+
+    movie21 = Movie.create(
+        user_id:bob.id,
+        title: "The Silence of the Lambs",
+        genre:"Drama",
+        review: "I'll never forget my first viewing of this movie at the theater and will always look back fondly on it for one reason: helping me quit smoking cigarettes.",
+        likes: 0,
+        dislikes: 0,
+        image: "https://m.media-amazon.com/images/M/MV5BNjNhZTk0ZmEtNjJhMi00YzFlLWE1MmEtYzM1M2ZmMGMwMTU4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg",
+        video_link: "https://youtu.be/W6Mm8Sbe__o",
+        movie_info: "A young F.B.I. cadet must receive the help of an incarcerated and manipulative cannibal killer to help catch another serial killer, a madman who skins his victims."
+    )
+
+    movie22 = Movie.create(
+        user_id: sanam.id,
+        title: "Clueless",
+        genre: "Comedy",
+        review: "This movie is another one of those feel good pictures you can't go wrong with. It's light and breezy like cruising the boulevard with the top down and it offers lots of laughs to boot.",
+        likes: 0,
+        dislikes: 0,
+        image: "https://m.media-amazon.com/images/M/MV5BMzBmOGQ0NWItOTZjZC00ZDAxLTgyOTEtODJiYWQ2YWNiYWVjXkEyXkFqcGdeQXVyNTE1NjY5Mg@@._V1_UY1200_CR87,0,630,1200_AL_.jpg",
+        video_link: "https://youtu.be/Mgjwq1ZzdPQ",
+        movie_info:"Shallow, rich and socially successful Cher is at the top of her Beverly Hills high school's pecking scale. Seeing herself as a matchmaker, Cher first coaxes two teachers into dating each other."
+    )
+
+    movie23 = Movie.create(
+        user_id: cat.id,
+        title: 'It',
+        genre: "Horror",
+        review: "Very scary!!",
+        likes: 0,
+        dislikes: 0,
+        image: "https://m.media-amazon.com/images/M/MV5BYjg1YTRkNzQtODgyYi00MTQ5LThiMDYtNDJjMWRjNTdjZDZlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg",
+        video_link: "https://youtu.be/8i3_2iGTQi8",
+        movie_info: "In 1960, seven preteen outcasts fight an evil demon that poses as a child-killing clown. Thirty years later, they reunite to stop the demon once and for all when it returns to their hometown."
+    )
+
+    movie24 = Movie.create(
+        user_id:cat.id,
+        title: "Major Payne",
+        genre: "Comedy",
+        review: "Unbeatable comedy for the right person in the right frame of mind.",
+        likes: 0,
+        dislikes: 0,
+        image: "https://image.tmdb.org/t/p/w500/kWHx5eq7PELkF3If7LrrhuBskRG.jpg",
+        video_link: "https://youtu.be/8Mqt2dN8W3c",
+        movie_info: "A recently discharged Major finds himself commanding a group of mismatched Cadets."
+    )
+
+    movie25 = Movie.create(
+        user_id: bob.id,
+        title: "Never Been Kissed",
+        genre: "Comedy",
+        review: "A newspaper reporter enrolls in high school as part of research for a story.",
+        likes: 0,
+        dislikes: 0,
+        image: "https://m.media-amazon.com/images/M/MV5BNjZmNTUzN2QtYzUxZi00M2YwLTgzNTgtZDkzYjg0YWVmNmYzXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg",
+        video_link: "https://youtu.be/xPyMf4ROt3Q",
+        movie_info: "This is a truly hilarious film and one that I have seen many times. Drew Barrymore is brilliant as Josie Geller, as is David Arquette as her brother."
+    )
     
 
   
@@ -272,6 +356,14 @@ watchlist_15 = Watchlist.create(user_id: jim.id, movie_id: movie16.id)
 watchlist_16 = Watchlist.create(user_id: bob.id, movie_id: movie12.id)
 watchlist_17 = Watchlist.create(user_id: jim.id, movie_id: movie11.id)
 watchlist_18 = Watchlist.create(user_id: beyonce.id, movie_id: movie18.id)
+watchlist_19 = Watchlist.create(user_id: beyonce.id, movie_id: movie20.id)
+watchlist_20 = Watchlist.create(user_id: jim.id, movie_id: movie19.id)
+watchlist_21 = Watchlist.create(user_id: bob.id, movie_id: movie22.id)
+watchlist_22 = Watchlist.create(user_id: beyonce.id, movie_id: movie21.id)
+watchlist_23 = Watchlist.create(user_id: sanam.id, movie_id: movie23.id)
+watchlist_24 = Watchlist.create(user_id: bob.id, movie_id: movie24.id)
+watchlist_25 = Watchlist.create(user_id: jim.id, movie_id: movie25.id)
+
 
 
 puts "You did it kid!"
