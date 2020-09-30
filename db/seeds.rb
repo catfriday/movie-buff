@@ -231,7 +231,7 @@ movie4 = Movie.create(
         review: "When I saw this film a couple of years ago, I was sixteen, I sort of loved it. Seeing it again, not in my teenage years anymore, I realize that 'She's All That' really is for teenagers. I still like it.",
         likes: 0,
         dislikes: 0,
-        image:"https://pics.filmaffinity.com/She_s_All_That-992579673-large.jpg",
+        image:"https://m.media-amazon.com/images/M/MV5BY2Y0N2YyOTQtMGNiYy00ZDViLTgxYmItODkxNzlkMWVjNTFkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg",
         video_link: "https://youtu.be/ExDPiPhLqEQ",
         movie_info: "A high school jock makes a bet that he can turn an unattractive girl into the school's prom queen."
     )

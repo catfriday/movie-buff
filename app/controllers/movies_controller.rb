@@ -12,6 +12,7 @@ class MoviesController < ApplicationController
 
     def update
         movie = Movie.find_by(id: params[:id])
+        # byebug
         movie.update(movie_params)
         render json: movie, except: [:created_at, :updated_at]
     end
